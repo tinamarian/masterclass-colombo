@@ -456,7 +456,157 @@
     .f-row{flex-direction:column;gap:12px;}
     .reg-form-card{padding:28px 20px;}
   }
-</style>
+
+  /* ═══════════════════════════════════════
+     MOBILE RESPONSIVE — Max 768px
+  ═══════════════════════════════════════ */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    nav { padding: 12px 20px !important; }
+    nav img { height: 44px !important; }
+    .nav-cta { padding: 8px 16px !important; font-size: 13px !important; }
+
+    /* HERO */
+    .hero { padding: 100px 20px 48px !important; min-height: auto !important; }
+    .hero-inner { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .reg-card { display: none !important; }
+    .hero h1 { font-size: 28px !important; }
+    .hero-sub { font-size: 15px !important; }
+    .hero-meta { gap: 16px !important; }
+    .hero-btns { flex-direction: column !important; gap: 12px !important; }
+    .btn-primary, .btn-ghost { width: 100% !important; text-align: center !important; padding: 14px 20px !important; }
+
+    /* TRUST BAR */
+    .trust { padding: 16px 20px !important; }
+    .trust-inner { gap: 12px !important; justify-content: flex-start !important; }
+    .trust-item { font-size: 12px !important; }
+
+    /* ALL SECTIONS */
+    section, .bonus-sec, .reg-sec { padding: 48px 20px !important; }
+    .si { padding: 0 !important; }
+
+    /* PAIN POINTS — collapse 2 cols to 1 */
+    .si > div[style*="grid-template-columns:1fr 420px"],
+    div[style*="grid-template-columns:1fr 420px"] { 
+      display: block !important; 
+    }
+    div[style*="grid-template-columns:1fr 420px"] > div:last-child { 
+      display: none !important; 
+    }
+
+    /* WHY ATTEND cards */
+    .why-grid { grid-template-columns: 1fr !important; }
+
+    /* STATS BAR — 4 cols to 2 */
+    div[style*="grid-template-columns:repeat(4,1fr)"] { 
+      grid-template-columns: repeat(2, 1fr) !important; 
+    }
+
+    /* MODULES GRID — 1 col */
+    .mod-grid { grid-template-columns: 1fr !important; }
+
+    /* PACKAGES — 1 col */
+    .pkg-grid { grid-template-columns: 1fr !important; }
+
+    /* TRAINERS — 1 col */
+    .tr-grid { grid-template-columns: 1fr !important; }
+    .tr-card { flex-direction: column !important; }
+    div[style*="height:380px"] { height: 260px !important; }
+
+    /* IMSC 2-col */
+    .imsc-inner { grid-template-columns: 1fr !important; gap: 32px !important; }
+
+    /* PACKAGE PERKS 3-col */
+    div[style*="grid-template-columns:repeat(auto-fit,minmax(260px"] { 
+      grid-template-columns: 1fr !important; 
+    }
+
+    /* BIZGROWTHPULSE 2-col */
+    div[style*="grid-template-columns:1fr 1fr"] { 
+      grid-template-columns: 1fr !important; 
+      gap: 24px !important;
+    }
+
+    /* ABOUT SKILLVERVE 2-col */
+    div[style*="grid-template-columns:1fr 1fr"] { 
+      grid-template-columns: 1fr !important; 
+    }
+
+    /* REGISTER section split card */
+    div[style*="grid-template-columns:1fr 1fr"][style*="border-radius:16px"] { 
+      grid-template-columns: 1fr !important; 
+    }
+    div[style*="grid-template-columns:1fr 1fr"][style*="border-radius:16px"] > img {
+      height: 180px !important;
+    }
+
+    /* COLOMBO STRIP */
+    div[style*="height:320px"] { height: 240px !important; }
+    div[style*="height:320px"] h2 { font-size: 22px !important; }
+    div[style*="height:320px"] p { font-size: 14px !important; }
+
+    /* REGISTER FORM */
+    .reg-form-card { padding: 24px 18px !important; }
+    .f-row { flex-direction: column !important; gap: 12px !important; }
+
+    /* GOOGLE FORM iframe */
+    iframe[src*="google.com/forms"] { height: 860px !important; }
+
+    /* FOOTER */
+    footer { padding: 36px 20px !important; }
+
+    /* PARTNER STATS */
+    .partner-grid { grid-template-columns: 1fr !important; }
+
+    /* GENERAL headings */
+    .sh { font-size: 26px !important; }
+    .ssub { font-size: 15px !important; }
+
+    /* PAIN POINTS sticky image — hide on mobile */
+    div[style*="position:sticky"] { display: none !important; }
+
+    /* BizGrowthPulse images on mobile */
+    div[style*="grid-template-columns:1fr 1fr;gap:52px"] {
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+    }
+    div[style*="grid-template-columns:1fr 1fr;gap:40px"] {
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+    }
+
+    /* 6 core features grid */
+    div[style*="grid-template-columns:repeat(auto-fit,minmax(280px"] {
+      grid-template-columns: 1fr !important;
+    }
+
+    /* WhatsApp button position */
+    a[href*="wa.me"] {
+      bottom: 16px !important;
+      right: 16px !important;
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+
+  /* ═══════════════════════════════════════
+     SMALL MOBILE — Max 480px
+  ═══════════════════════════════════════ */
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 24px !important; line-height: 1.2 !important; }
+    .hero-eyebrow { font-size: 10px !important; }
+    .sh { font-size: 22px !important; }
+    nav img { height: 38px !important; }
+    .nav-cta { font-size: 12px !important; padding: 7px 12px !important; }
+    div[style*="grid-template-columns:repeat(4"] {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .pkg-card.feat::before { display: none !important; }
+    div[style*="height:320px"] { height: 200px !important; }
+  }
+
+  </style>
 </head>
 <body>
 
